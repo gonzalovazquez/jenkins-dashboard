@@ -1,0 +1,11 @@
+.passing{
+    background-color: green;
+}
+
+.errors{
+    background-color: yellow;
+}
+
+.failing{
+    background-color: red;
+}
