@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Observable';
 export class JenkinsDashboardService {
     constructor(private http:Http) {}
     
-    private jenkinsURL = 'https://jenkins-dashboard-api.herokuapp.com/job/Libraries';  // URL to web API
+    private jenkinsURL = 'https://jenkins-dashboard-api.herokuapp.com/api/job/Libraries';  // URL to web API
     
     getJobs (): Observable<Job[]> {
         return this.http.get(this.jenkinsURL)
